@@ -1,0 +1,9 @@
+Python Lists vs Tuples:
+Lists are mutable, meaning they can be changed.
+Tuples are immutable, meaning they cannot be changed.
+
+Stack:
+A stack is a LIFO (Last In First Out) data structure.
+
+Queue:
+A queue is a FIFO (First In First Out) data structure.
