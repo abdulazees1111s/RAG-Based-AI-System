@@ -1,10 +1,10 @@
-# 🚀 RAG-Based AI Knowledge Assistant
+# RAG-Based AI Knowledge Assistant
 
 A **Retrieval-Augmented Generation (RAG)** system built with FastAPI that answers questions using **your own data** instead of relying on generic LLM knowledge.
 
 ---
 
-## 🧠 Overview
+## Overview
 
 This project implements a **document-based question answering system** where:
 
@@ -13,23 +13,23 @@ This project implements a **document-based question answering system** where:
 * Retrieved based on user query
 * Passed to an LLM for **context-aware, grounded answers**
 
-👉 The system avoids hallucination by answering **only from provided data**
+The system avoids hallucination by answering **only from provided data**
 
 ---
 
-## 🔥 Features
+##  Features
 
-* ✅ Retrieval-Augmented Generation (RAG)
-* ✅ Semantic search using embeddings
-* ✅ FAISS vector database for fast retrieval
-* ✅ FastAPI backend with REST endpoints
-* ✅ Environment-based configuration (.env)
-* ✅ Support for multiple LLM providers (OpenRouter / others)
-* ✅ No hallucination (strict context-based answers)
+*  Retrieval-Augmented Generation (RAG)
+*  Semantic search using embeddings
+*  FAISS vector database for fast retrieval
+*  FastAPI backend with REST endpoints
+*  Environment-based configuration (.env)
+*  Support for multiple LLM providers (OpenRouter / others)
+*  No hallucination (strict context-based answers)
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 | Component  | Technology            |
 | ---------- | --------------------- |
@@ -41,7 +41,7 @@ This project implements a **document-based question answering system** where:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 rag-ai-system/
@@ -64,9 +64,9 @@ rag-ai-system/
 
 ---
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
-### 1️⃣ Clone the repository
+### 1️ Clone the repository
 
 ```
 git clone https://github.com/YOUR_USERNAME/rag-ai-system.git
@@ -75,7 +75,7 @@ cd rag-ai-system
 
 ---
 
-### 2️⃣ Install dependencies
+### 2️ Install dependencies
 
 ```
 pip install -r requirements.txt
@@ -83,7 +83,7 @@ pip install -r requirements.txt
 
 ---
 
-### 3️⃣ Configure environment variables
+### 3️ Configure environment variables
 
 Create a `.env` file:
 
@@ -94,7 +94,7 @@ OPENROUTER_MODEL=meta-llama/llama-3-8b-instruct
 
 ---
 
-### 4️⃣ Add your data
+### 4️ Add your data
 
 Edit:
 
@@ -114,17 +114,17 @@ A queue is a FIFO (First In First Out) data structure.
 
 ---
 
-### 5️⃣ Run ingestion
+### 5️ Run ingestion
 
 ```
 python ingest.py
 ```
 
-👉 This creates the vector database
+This creates the vector database
 
 ---
 
-### 6️⃣ Start the API
+### 6️ Start the API
 
 ```
 python -m uvicorn app:app --reload
@@ -132,7 +132,7 @@ python -m uvicorn app:app --reload
 
 ---
 
-### 7️⃣ Open API Docs
+### 7️ Open API Docs
 
 ```
 http://127.0.0.1:8000/docs
@@ -140,7 +140,7 @@ http://127.0.0.1:8000/docs
 
 ---
 
-## 🧪 Example Usage
+## Example Usage
 
 ### Query:
 
@@ -158,7 +158,7 @@ GET /ask?q=What is a stack?
 
 ---
 
-## ⚠️ Important Behavior
+## Important Behavior
 
 * The system answers **only from provided data**
 * If answer is not found:
@@ -169,11 +169,11 @@ GET /ask?q=What is a stack?
 }
 ```
 
-👉 This ensures **no hallucination**
+This ensures **no hallucination**
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 1. Documents are loaded and split into chunks
 2. Each chunk is converted into embeddings
@@ -184,7 +184,7 @@ GET /ask?q=What is a stack?
 
 ---
 
-## 🔄 Future Enhancements
+## Future Enhancements
 
 * AI Interview System (MCQ + coding questions)
 * Answer evaluation and scoring
@@ -195,7 +195,7 @@ GET /ask?q=What is a stack?
 
 ---
 
-## 💡 Key Learning Outcomes
+## Key Learning Outcomes
 
 * RAG architecture implementation
 * Vector databases and semantic search
@@ -205,13 +205,13 @@ GET /ask?q=What is a stack?
 
 ---
 
-## 📌 Author
+## Author
 
 **Abdul Azees**
 Full-stack Developer | AI Enthusiast
 
 ---
 
-## ⭐ If you like this project
+## If you like this project
 
 Give it a star ⭐ on GitHub!
